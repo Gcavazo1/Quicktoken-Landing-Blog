@@ -12,7 +12,7 @@ const TrendDiagram = () => {
   const maxValue = Math.max(...revenueValues, ...adoptionValues);
   
   return (
-    <div className="bg-surface p-6 rounded-lg shadow-lg font-body max-w-2xl mx-auto">
+    <div className="bg-surface p-6 rounded-lg shadow-lg font-body">
       <h4 className="text-center text-lg font-semibold text-textLight mb-6 font-title">
         Blockchain Token Platform Market Growth
       </h4>

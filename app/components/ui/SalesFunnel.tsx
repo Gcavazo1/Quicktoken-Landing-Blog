@@ -50,7 +50,7 @@ const SalesFunnel = () => {
   ];
 
   return (
-    <div className="bg-surface p-4 rounded-lg shadow-lg max-w-2xl mx-auto">
+    <div className="bg-surface p-4 rounded-lg shadow-lg">
       <h4 className="text-center text-lg font-semibold text-textLight mb-6">
         Token Platform Customer Journey
       </h4>
@@ -58,21 +58,15 @@ const SalesFunnel = () => {
       <div className="space-y-4">
         {funnelStages.map((stage, index) => (
           <div key={stage.name} className="flex flex-col items-center">
-            {/* Add a wrapper div for centering the variable-width element */}
-            <div className="w-full flex justify-center"> 
-              {/* Funnel section (move width here, remove flex properties) */}
-              <div 
-                className={`${stage.width} h-12 bg-gradient-to-b from-background to-surface border border-${stage.color} rounded-t-lg relative group transition-all duration-300 hover:from-surface hover:to-background flex items-center justify-center`} 
-                // Removed flex items-center justify-center from here as parent handles centering
-              >
-                {/* Icon */}
-                <stage.icon className={`${stage.color} text-xl absolute -top-4 p-1 bg-surface rounded-full border border-${stage.color}`} />
-                
-                {/* Stage name */}
-                <span className={`${stage.color} font-medium`}>
-                  {stage.name}
-                </span>
-              </div>
+            {/* Funnel section */}
+            <div className={`${stage.width} h-12 bg-gradient-to-b from-background to-surface border border-${stage.color} rounded-t-lg flex items-center justify-center relative group transition-all duration-300 hover:from-surface hover:to-background`}>
+              {/* Icon */}
+              <stage.icon className={`${stage.color} text-xl absolute -top-4 p-1 bg-surface rounded-full border border-${stage.color}`} />
+              
+              {/* Stage name */}
+              <span className={`${stage.color} font-medium`}>
+                {stage.name}
+              </span>
             </div>
             
             {/* Stage description */}
