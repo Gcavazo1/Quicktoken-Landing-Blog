@@ -42,10 +42,13 @@ const BlogContentSectionPart2 = () => {
               </li>
             </ul>
 
-            <TrendDiagram />
+            {/* Temporarily comment out TrendDiagram for testing */}
+            {/* <div className="my-12">
+              <TrendDiagram />
+            </div>
             <p className="text-textMuted text-center italic text-sm leading-relaxed">
               As shown in the chart above, the token platform market continues to grow, creating significant revenue opportunities for platform owners.
-            </p>
+            </p> */}
 
             <h3 className="text-2xl text-primary font-title font-semibold pt-4">
               Who is Your Target Audience?
@@ -83,10 +86,13 @@ const BlogContentSectionPart2 = () => {
               Once built, how do you attract users?
             </p>
 
-            <SalesFunnel />
+            {/* Temporarily comment out SalesFunnel for testing */}
+            {/* <div className="my-8">
+              <SalesFunnel />
+            </div>
             <p className="text-textMuted text-center italic text-sm leading-relaxed mb-6">
               Understanding the customer journey helps you target your marketing efforts at each stage of the funnel.
-            </p>
+            </p> */}
             
              <ul className="list-disc space-y-4 pl-5 text-textMuted leading-relaxed">
               <li>
