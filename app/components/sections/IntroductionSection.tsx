@@ -10,7 +10,7 @@ const IntroductionSection = () => {
         <p className="text-lg md:text-xl text-textMuted mb-8 max-w-3xl mx-auto font-body">
           Smart contracts offer exciting automated revenue streams. But building a secure token platform involves technical hurdles and costs.
         </p>
-        <p className="text-lg md:text-xl text-textLight max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-textLight max-w-3xl mx-auto font-body">
           What if you could tap into this potential <span className="text-highlight font-semibold">without being a blockchain guru</span> or spending months on development? What if you could own the platform itself?
         </p>
       </div>

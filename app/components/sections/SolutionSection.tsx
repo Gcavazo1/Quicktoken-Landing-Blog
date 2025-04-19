@@ -10,7 +10,7 @@ const SolutionSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-secondary font-title">
           The Shortcut: Pre-Built ERC20 Token Platform Codebase
         </h2>
-        <p className="text-lg md:text-xl text-textMuted mb-8 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-textMuted mb-8 max-w-3xl mx-auto font-body">
           Stop wrestling with complexity. The QuickToken Dashboard provides a <span className="text-highlight font-semibold">complete, pre-built, and customizable solution</span> to launch your own token deployment platform in a fraction of the time and cost.
         </p>
         
@@ -27,7 +27,7 @@ const SolutionSection = () => {
         </div> 
         */}
 
-        <p className="text-lg md:text-xl text-textLight max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-textLight max-w-3xl mx-auto font-body">
           Focus on your business model and user acquisition, not on reinventing the wheel. Get the foundation you need, ready to deploy and customize.
         </p>
       </div>
