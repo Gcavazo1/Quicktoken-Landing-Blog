@@ -11,7 +11,7 @@ const BlogContentSectionPart2 = () => {
           Building Your Business: Revenue, Audience & Marketing
         </h2>
 
-        <article className="prose prose-invert lg:prose-xl max-w-none mx-auto text-textLight font-body">
+        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight font-body">
           {/* Using prose classes - requires @tailwindcss/typography */}
 
           <h3 className="text-2xl text-primary font-title">Monetization Models (Your Platform's Fees)</h3>
