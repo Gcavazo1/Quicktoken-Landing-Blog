@@ -17,7 +17,7 @@ export const titleFont = localFont({
 export const bodyFont = localFont({
   src: [
     {
-      path: '../../public/fonts/Goodnight-london-Sans.ttf',
+      path: '../../public/fonts/Goodnight-London-Sans.ttf',
       weight: '400',
       style: 'normal',
     },
