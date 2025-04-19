@@ -10,7 +10,7 @@ const BlogContentSectionPart1 = () => {
           Understanding the Engine: Smart Contracts & Token Actions
         </h2>
 
-        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight font-body">
+        <article className="prose prose-invert lg:prose-xl max-w-none mx-auto text-textLight font-body">
           {/* Using prose classes for better article formatting - requires @tailwindcss/typography plugin if not already set up */}
           {/* We can adjust styling if the plugin isn't used */}
 
