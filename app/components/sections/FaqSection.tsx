@@ -3,31 +3,35 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-// FAQ items data
+// Updated FAQ items data
 const faqItems = [
   {
     question: "What exactly do I get when I purchase?",
-    answer: "You receive the complete source code for the QuickToken Dashboard, including the frontend UI, smart contracts, and configuration files. All documentation and deployment instructions are included to help you set up your own token deployment platform."
+    answer: "You receive the complete source code for the QuickToken Dashboard, including the frontend UI (Next.js), smart contracts (Solidity), and configuration files. All documentation, deployment instructions, and a setup wizard are included to help you launch your own token deployment platform."
   },
   {
     question: "Do I need technical expertise to set this up?",
-    answer: "Some technical knowledge is helpful but not advanced blockchain expertise. If you're familiar with deploying a Next.js application and have basic understanding of web3, you should be able to follow our detailed setup guides. We also offer support to help with any difficulties."
+    answer: "Basic technical familiarity is helpful, but advanced blockchain knowledge isn't required. If you can deploy a Next.js app and understand web3 basics, our low-code setup wizard and detailed guides make installation straightforward. Plus, 30 days of technical and setup email support are included."
   },
   {
     question: "Can I customize the branding and UI?",
-    answer: "Absolutely! The codebase is fully customizable. You can change colors, logos, text, and even the entire layout to match your brand identity. Our premium showcase demonstrates what's possible with custom branding."
+    answer: "Yes! You get full source code access. This package includes basic customization via the setup wizard (title, theme) and the admin settings page. For deeper changes (colors, logos, layout), you can modify the code directly. Whitelist functionality for tiered user roles (owner/admin/regular) is also implemented."
+  },
+  {
+    question: "Can I request additional branding and personalization?",
+    answer: "Absolutely. As shown in the premium showcase linked on this page, the platform can be extensively customized. For bespoke branding, unique features, or a full DApp build, please contact us directly via the developer's business page for a consultation and personalized quote."
   },
   {
     question: "What blockchains are supported?",
-    answer: "The platform supports Ethereum and any EVM-compatible blockchain like Polygon, Binance Smart Chain, Avalanche, and others. You can configure which networks your deployment platform will support."
+    answer: "The platform is designed for Ethereum and EVM-compatible chains (Polygon, BSC, Avalanche, etc.). This version integrates with browser wallets like Coinbase Wallet and MetaMask via standard web3 providers. Note: WalletConnect for broader mobile support is typically part of custom/premium builds."
   },
   {
     question: "How do I implement the fee collection?",
-    answer: "The platform includes built-in mechanisms for both access fees and per-mint fees. The admin dashboard lets you configure fee percentages or fixed amounts, and the documentation explains how to set up payment collection methods."
+    answer: "Fee collection is configured easily via the setup wizard and the admin dashboard. You can set the platform fee address and the percentage collected on all minting actions for tokens deployed through your platform. The documentation covers setup details."
   },
   {
     question: "Is the code audited for security?",
-    answer: "The smart contracts are built on well-tested OpenZeppelin standards, which are the industry standard for secure token implementations. While we emphasize security best practices, we recommend an independent audit of your final implementation before handling significant value."
+    answer: "The core smart contracts leverage OpenZeppelin's battle-tested libraries, the industry standard for security. While we follow best practices, we always recommend an independent security audit of your final, deployed implementation, especially before handling significant user funds or transaction volumes."
   },
 ];
 
@@ -37,15 +41,13 @@ const FaqSection = () => {
 
   // Toggle expansion of an FAQ item
   const toggleExpand = (index: number) => {
-    if (expandedIndexes.includes(index)) {
-      setExpandedIndexes(expandedIndexes.filter(i => i !== index));
-    } else {
-      setExpandedIndexes([...expandedIndexes, index]);
-    }
+    setExpandedIndexes(prev => 
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
   };
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section id="faq" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-secondary font-title">
           Frequently Asked Questions
@@ -77,7 +79,7 @@ const FaqSection = () => {
               
               {/* FAQ Answer (conditionally visible) */}
               {expandedIndexes.includes(index) && (
-                <div className="px-6 py-4 bg-background text-textMuted">
+                <div className="px-6 py-4 bg-background text-textMuted font-body">
                   <p>{item.answer}</p>
                 </div>
               )}

@@ -22,7 +22,7 @@ const Footer = () => {
     {
       title: "Resources",
       links: [
-        { name: "Documentation", href: "#" },
+        { name: "Documentation", href: "https://github.com/Gcavazo1/quicktoken-enterprise-dashboard.git" },
         { name: "GitHub", href: "https://github.com/Gcavazo1/Quicktoken-Landing-Blog.git" },
         { name: "Support", href: "https://personal-link-tree-mu.vercel.app/" },
         { name: "FAQ", href: "#faq" },
@@ -79,7 +79,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {group.links.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className="text-textMuted hover:text-primary transition-colors duration-200 font-body">
+                    <Link 
+                      href={link.href} 
+                      className="text-textMuted hover:text-primary transition-colors duration-200 font-body"
+                      target={link.href.startsWith('http') ? '_blank' : undefined}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    >
                       {link.name}
                     </Link>
                   </li>
