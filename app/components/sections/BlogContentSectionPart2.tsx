@@ -42,7 +42,7 @@ const BlogContentSectionPart2 = () => {
               </li>
             </ul>
 
-            <div className="my-12">
+            <div className="my-12 max-w-2xl mx-auto">
               <TrendDiagram />
             </div>
             <p className="text-textMuted text-center italic text-sm leading-relaxed">
@@ -85,7 +85,7 @@ const BlogContentSectionPart2 = () => {
               Once built, how do you attract users?
             </p>
 
-            <div className="my-8">
+            <div className="my-8 max-w-2xl mx-auto">
               <SalesFunnel />
             </div>
             <p className="text-textMuted text-center italic text-sm leading-relaxed mb-6">
