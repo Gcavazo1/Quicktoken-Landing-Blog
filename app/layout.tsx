@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${titleFont.variable} ${bodyFont.variable}`}>
-      <body className={`bg-background text-textLight font-body`}>
+      <body className={`bg-background text-textLight font-body overflow-x-hidden`}>
         {/* Optional: Add ThemeProvider if implementing dark mode toggle */}
         <Header />
         <main className="min-h-screen">

@@ -13,7 +13,7 @@ import FaqSection from "@/app/components/sections/FaqSection"; // Import FAQ Sec
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-full">
+    <main className="flex flex-col items-center">
       {/* Add an offset to all sections to account for the fixed header */}
       <div className="h-16"></div>
       <Hero />
