@@ -7,14 +7,14 @@ const BlogContentSectionPart2 = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 max-w-3xl">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary font-title">
           Building Your Business: Revenue, Audience & Marketing
         </h2>
 
-        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight">
+        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight font-body">
           {/* Using prose classes - requires @tailwindcss/typography */}
 
-          <h3 className="text-2xl text-primary">Monetization Models (Your Platform's Fees)</h3>
+          <h3 className="text-2xl text-primary font-title">Monetization Models (Your Platform's Fees)</h3>
           <p className="text-textMuted">
             Now that you understand the mechanics and have the tool (like QuickToken), how do you actually structure your revenue? Here are common approaches:
           </p>

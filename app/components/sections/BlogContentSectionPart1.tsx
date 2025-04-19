@@ -6,15 +6,15 @@ const BlogContentSectionPart1 = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 max-w-3xl">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary font-title">
           Understanding the Engine: Smart Contracts & Token Actions
         </h2>
 
-        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight">
+        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight font-body">
           {/* Using prose classes for better article formatting - requires @tailwindcss/typography plugin if not already set up */}
           {/* We can adjust styling if the plugin isn't used */}
 
-          <h3 className="text-2xl text-primary">What Exactly is a Smart Contract?</h3>
+          <h3 className="text-2xl text-primary font-title">What Exactly is a Smart Contract?</h3>
           <p className="text-textMuted">
             Think of a smart contract like a digital vending machine operating on the blockchain. It's a piece of code that automatically executes actions based on pre-defined rules when certain conditions are met. Once deployed on a blockchain (like Ethereum, Polygon, or Binance Smart Chain), it's transparent, immutable (can't be easily changed), and operates without needing a middleman.
           </p>
