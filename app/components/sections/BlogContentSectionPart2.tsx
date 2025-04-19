@@ -1,0 +1,108 @@
+import React from 'react';
+import TrendDiagram from '../ui/TrendDiagram';
+import SalesFunnel from '../ui/SalesFunnel';
+
+const BlogContentSectionPart2 = () => {
+  return (
+    <section className="py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 max-w-3xl">
+        
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">
+          Building Your Business: Revenue, Audience & Marketing
+        </h2>
+
+        <article className="prose prose-invert lg:prose-xl mx-auto text-textLight">
+          {/* Using prose classes - requires @tailwindcss/typography */}
+
+          <h3 className="text-2xl text-primary">Monetization Models (Your Platform's Fees)</h3>
+          <p className="text-textMuted">
+            Now that you understand the mechanics and have the tool (like QuickToken), how do you actually structure your revenue? Here are common approaches:
+          </p>
+          <ul className="list-disc space-y-2 pl-5 text-textMuted">
+            <li>
+              <strong className="text-textLight">Platform Subscription/Access Fee:</strong> Charge users a recurring (monthly/yearly) or one-time fee just to use your platform to deploy tokens. Simple and predictable income.
+            </li>
+            <li>
+              <strong className="text-textLight">One-Time Deployment Fee:</strong> Charge a flat fee each time a user deploys a new token contract through your service. Good for project-based users.
+            </li>
+            <li>
+              <strong className="text-textLight">Percentage-Based Minting Fee:</strong> Take a small percentage (e.g., 0.5-2%) of the tokens minted through contracts deployed on your platform. This aligns your income with your users' success but requires more complex off-chain tracking or specialized contract logic.
+            </li>
+             <li>
+              <strong className="text-textLight">Fixed Minting Fee:</strong> Charge a small, fixed fee (in native currency like ETH/MATIC or stablecoin) per mint transaction. Easier to implement than percentage fees.
+            </li>
+             <li>
+              <strong className="text-textLight">Hybrid Models:</strong> Combine approaches, like a basic access fee plus optional premium features or lower deployment fees for subscribers.
+            </li>
+          </ul>
+
+          <div className="not-prose my-12">
+            <TrendDiagram />
+          </div>
+          <p className="text-textMuted text-center italic">
+            As shown in the chart above, the token platform market continues to grow, creating significant revenue opportunities for platform owners.
+          </p>
+
+          <h3 className="text-2xl text-primary mt-8">Who is Your Target Audience?</h3>
+          <p className="text-textMuted">
+            Who would pay to use *your* token deployment platform? Consider these groups:
+          </p>
+           <ul className="list-disc space-y-2 pl-5 text-textMuted">
+            <li>
+              <strong className="text-textLight">Community Leaders & Creators:</strong> Individuals building online communities, DAOs, or fan clubs who want a token for governance, membership, or rewards without coding.
+            </li>
+            <li>
+              <strong className="text-textLight">Small Businesses & Startups:</strong> Companies exploring loyalty programs, simple utility tokens, or promotional tokens.
+            </li>
+             <li>
+              <strong className="text-textLight">Event Organizers:</strong> Using tokens for ticketing, access control, or in-event activities.
+            </li>
+            <li>
+              <strong className="text-textLight">Educational Projects:</strong> Bootcamps or courses teaching blockchain concepts might use your platform for practical exercises.
+            </li>
+             <li>
+              <strong className="text-textLight">NFT Projects (Simple Tokens):</strong> While complex NFT platforms are different, some projects might need a basic associated utility token.
+            </li>
+          </ul>
+
+           <h3 className="text-2xl text-primary mt-8">Marketing Your Platform</h3>
+          <p className="text-textMuted">
+            Once built, how do you attract users?
+          </p>
+
+          <div className="not-prose my-8">
+            <SalesFunnel />
+          </div>
+          <p className="text-textMuted text-center italic mb-6">
+            Understanding the customer journey helps you target your marketing efforts at each stage of the funnel.
+          </p>
+          
+           <ul className="list-disc space-y-2 pl-5 text-textMuted">
+            <li>
+              <strong className="text-textLight">Content Marketing:</strong> Create blog posts, tutorials, and guides (like this one!) about token use cases, targeting keywords your audience searches for.
+            </li>
+             <li>
+              <strong className="text-textLight">Community Engagement:</strong> Participate in relevant Discord servers, forums (Reddit), and social media groups (Twitter/X, Farcaster) where potential users hang out. Offer value, don't just shill.
+            </li>
+             <li>
+              <strong className="text-textLight">Partnerships:</strong> Collaborate with complementary services (e.g., community platforms, NFT marketplaces with simple token needs).
+            </li>
+            <li>
+              <strong className="text-textLight">Paid Ads:</strong> Targeted ads on platforms like Twitter or search engines can work if you have a clear value proposition and budget.
+            </li>
+             <li>
+              <strong className="text-textLight">Offer a Demo/Testnet:</strong> Let users try before they buy, reducing friction.
+            </li>
+          </ul>
+
+          <p className="text-textLight mt-6">
+            Building a successful SaaS platform involves more than just code; it requires understanding your market, providing value, and effectively reaching your audience. QuickToken gives you the technical foundation, allowing you to focus on these crucial business aspects.
+          </p>
+
+        </article>
+      </div>
+    </section>
+  );
+};
+
+export default BlogContentSectionPart2; 
