@@ -42,9 +42,7 @@ const BlogContentSectionPart2 = () => {
               </li>
             </ul>
 
-            <div className="my-12 max-w-2xl mx-auto">
-              <TrendDiagram />
-            </div>
+            <TrendDiagram />
             <p className="text-textMuted text-center italic text-sm leading-relaxed">
               As shown in the chart above, the token platform market continues to grow, creating significant revenue opportunities for platform owners.
             </p>
@@ -85,9 +83,7 @@ const BlogContentSectionPart2 = () => {
               Once built, how do you attract users?
             </p>
 
-            <div className="my-8 max-w-2xl mx-auto">
-              <SalesFunnel />
-            </div>
+            <SalesFunnel />
             <p className="text-textMuted text-center italic text-sm leading-relaxed mb-6">
               Understanding the customer journey helps you target your marketing efforts at each stage of the funnel.
             </p>

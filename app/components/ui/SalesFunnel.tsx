@@ -50,7 +50,7 @@ const SalesFunnel = () => {
   ];
 
   return (
-    <div className="bg-surface p-4 rounded-lg shadow-lg">
+    <div className="bg-surface p-4 rounded-lg shadow-lg max-w-2xl mx-auto">
       <h4 className="text-center text-lg font-semibold text-textLight mb-6">
         Token Platform Customer Journey
       </h4>
