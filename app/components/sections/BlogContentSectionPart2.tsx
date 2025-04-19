@@ -47,7 +47,7 @@ const BlogContentSectionPart2 = () => {
                 src="/images/blockchain-adoption-interface.jpg" 
                 alt="Bar chart showing projected growth of blockchain token platform user adoption and revenue potential from 2020 to 2025"
                 width={700}
-                height={350}
+                height={400}
                 className="mx-auto rounded w-full h-auto"
               />
             </div>
@@ -98,7 +98,7 @@ const BlogContentSectionPart2 = () => {
                 src="/images/sales-funnel-interface.jpg" 
                 alt="Diagram illustrating a sales funnel for a token platform: Awareness, Interest, Consideration, Decision, Purchase"
                 width={700}
-                height={280}
+                height={400}
                 className="mx-auto rounded w-full h-auto"
               />
             </div>
