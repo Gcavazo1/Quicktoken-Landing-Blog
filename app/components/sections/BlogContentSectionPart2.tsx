@@ -11,8 +11,7 @@ const BlogContentSectionPart2 = () => {
           Building Your Business: Revenue, Audience & Marketing
         </h2>
 
-        <div className="max-w-3xl mx-auto">
-          <article className="text-textLight font-body space-y-6">
+        <article className="text-textLight font-body space-y-6">
             
             <h3 className="text-2xl text-primary font-title font-semibold pt-4">
               Monetization Models (Your Platform's Fees)
@@ -121,7 +120,6 @@ const BlogContentSectionPart2 = () => {
             </p>
 
           </article>
-        </div>
       </div>
     </section>
   );

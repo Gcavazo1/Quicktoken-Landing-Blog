@@ -30,9 +30,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    // Add any Tailwind plugins here (e.g., @tailwindcss/forms, @tailwindcss/typography)
-    require('@tailwindcss/typography'), // Add typography plugin
-  ],
 }
 export default config
