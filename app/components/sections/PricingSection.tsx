@@ -31,7 +31,7 @@ const PricingSection = () => {
             <p className="text-textMuted mt-2 font-body">Complete Platform Codebase</p>
             
             <div className="mt-6 mb-4">
-              <span className="text-4xl font-bold text-highlight">$99</span>
+              <span className="text-4xl font-bold text-highlight">$50</span>
               <span className="text-textMuted font-body"> USD</span>
             </div>
             
