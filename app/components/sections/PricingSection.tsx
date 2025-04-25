@@ -1,17 +1,15 @@
 import React from 'react';
-import { FaCheck, FaEnvelope } from 'react-icons/fa';
+import { FaCheck, FaEnvelope, FaShoppingCart } from 'react-icons/fa';
 
 const PricingSection = () => {
   // Features included in the package
   const includedFeatures = [
     "Complete Source Code Access",
-    "Admin Dashboard UI",
-    "Token Configuration Panel",
+    "Admin Dashboard & Config Panel",
     "Revenue Fee Management",
-    "ERC-20 Smart Contracts",
+    "ERC-20 Smart Contracts Included",
     "Detailed Documentation",
     "Deployment Instructions",
-    "3 Months Email Support",
   ];
 
   return (
@@ -31,7 +29,7 @@ const PricingSection = () => {
             <p className="text-textMuted mt-2 font-body">Complete Platform Codebase</p>
             
             <div className="mt-6 mb-4">
-              <span className="text-4xl font-bold text-highlight">$99</span>
+              <span className="text-4xl font-bold text-highlight">$49</span>
               <span className="text-textMuted font-body"> USD</span>
             </div>
             
@@ -50,17 +48,17 @@ const PricingSection = () => {
             
             <div className="mt-8 text-center">
               <a 
-                href="https://personal-link-tree-mu.vercel.app/contact.html" 
+                href="https://gigacode-nodus-hub.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-opacity-80 text-background font-bold py-4 px-10 rounded-lg transition duration-300 flex items-center justify-center mx-auto font-body"
               >
-                <FaEnvelope className="mr-2" />
-                Contact for Purchase
+                <FaShoppingCart className="mr-2" />
+                View Purchase Options
               </a>
               
               <p className="mt-4 text-textMuted text-sm font-body">
-                Click to inquire about purchase options via Stripe or Crypto.
+                Click to view purchase options.
               </p>
             </div>
           </div>
