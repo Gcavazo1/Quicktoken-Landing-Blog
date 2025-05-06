@@ -24,7 +24,7 @@ const Footer = () => {
       links: [
         { name: "Documentation", href: "https://github.com/Gcavazo1/quicktoken-enterprise-dashboard.git" },
         { name: "GitHub", href: "https://github.com/Gcavazo1/Quicktoken-Landing-Blog.git" },
-        { name: "Support", href: "https://personal-link-tree-mu.vercel.app/" },
+        { name: "Support", href: "https://personal-link-tree-mu.vercel.app/contact.html" },
         { name: "FAQ", href: "#faq" },
       ]
     },
